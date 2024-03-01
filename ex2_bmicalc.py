@@ -5,11 +5,11 @@ def main():
         try:
             height = float(input("What is your height in cm?: "))
             weight = float(input("What is your weight in kilograms?: "))
-            BMI()
+            calculate_bmi()
         except ValueError:
             print("Please enter a valid integer in cm.")
 
-def BMI():
+def calculate_bmi():
     BMI = float(weight / pow(height / 100, 2))
     print(f"Your BMI is {BMI}.")
 if __name__ == "__main__":
